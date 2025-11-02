@@ -85,7 +85,7 @@ class FaceDetectionDemo(SICApplication):
         self.logger.info("Creating pipeline...")
         
         # Create camera configuration using fx and fy to resize the image along x- and y-axis, and possibly flip image
-        conf = DesktopCameraConf(fx=1.0, fy=1.0, flip=1)
+        conf = DesktopCameraConf(fx=1.0, fy=1.0, flip=-1)
         
         # initialize the device(s) we want to use with relevant configuration(s)
         self.desktop = Desktop(camera_conf=conf)
